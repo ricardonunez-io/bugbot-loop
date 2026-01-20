@@ -1,0 +1,15 @@
+{
+  "name": "bugbot-loop",
+  "owner": {
+    "name": "bugbot-loop"
+  },
+  "plugins": [
+    {
+      "name": "bugbot-loop",
+      "source": "./plugins/bugbot-loop",
+      "description": "Resolve Cursor Bugbot PR comments in a loop until all are addressed",
+      "version": "1.0.0",
+      "keywords": ["bugbot", "cursor", "pr", "code-review", "automation"]
+    }
+  ]
+}

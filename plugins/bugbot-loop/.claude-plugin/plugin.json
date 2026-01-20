@@ -1,0 +1,5 @@
+{
+  "name": "bugbot-loop",
+  "version": "1.0.0",
+  "description": "Resolve Cursor Bugbot PR comments in a loop until all are addressed"
+}
