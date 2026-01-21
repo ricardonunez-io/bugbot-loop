@@ -30,6 +30,13 @@ Set max iterations:
 /bugbot-loop:run --max-iterations=5
 ```
 
+Skip mode prompt:
+
+```
+/bugbot-loop:run --auto
+/bugbot-loop:run --manual
+```
+
 ### Prerequisites
 
 - [GitHub CLI](https://cli.github.com)

@@ -8,7 +8,7 @@
       "name": "bugbot-loop",
       "source": "./plugins/bugbot-loop",
       "description": "Resolve Cursor Bugbot PR comments in a loop until all are addressed",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "keywords": ["bugbot", "cursor", "pr", "code-review", "automation"]
     }
   ]

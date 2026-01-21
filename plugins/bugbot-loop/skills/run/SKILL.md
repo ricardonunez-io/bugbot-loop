@@ -9,6 +9,8 @@ $ARGUMENTS
 Supported flags:
 
 - `--max-iterations=N` - Maximum loop iterations (default: 10)
+- `--auto` - Run in auto-commit mode without prompting
+- `--manual` - Run in manual mode without prompting
 
 ## Instructions
 
@@ -26,12 +28,13 @@ If not on a PR branch, inform the user and stop.
 
 Then, if you have no context on what the changes are that the user made, run `gh pr diff` to get the diff of the PR.
 
-Then, ask the user whether they want to enable **auto-commit mode**:
+Determine the mode:
 
-- Auto-commit mode: You will commit, push, and loop automatically until all comments are resolved
-- Manual mode: You will fix all current comments, then stop and notify the user to review/commit manually
-
-Use the AskUserQuestion tool to ask this.
+- If `--auto` flag is present, use auto-commit mode
+- If `--manual` flag is present, use manual mode
+- Otherwise, ask the user using AskUserQuestion:
+  - Auto-commit mode: You will commit, push, and loop automatically until all comments are resolved
+  - Manual mode: You will fix all current comments, then stop and notify the user to review/commit manually
 
 ### Phase 1: Wait for Bugbot CI (auto-commit mode only)
 
